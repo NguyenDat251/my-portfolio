@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "components/Navbar.js";
 import Footer from "components/Footer.js";
 import Banner from "components/Banner/Banner.js";
+import History from "components/History/History.js";
 
 export default function Landing() {
   return (
@@ -48,7 +49,9 @@ export default function Landing() {
           </div>
         </div>
 
-        <section className="pb-20 bg-gray-300 -mt-24">
+        <History />
+
+        {/* <section className="pb-20 bg-gray-300 -mt-24">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap">
               <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
@@ -557,7 +560,7 @@ export default function Landing() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
       <Footer />
     </>
