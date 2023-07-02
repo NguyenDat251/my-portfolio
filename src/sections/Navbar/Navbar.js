@@ -18,7 +18,7 @@ export default function Navbar() {
   );
 
   return (
-    <nav className="top-0 fixed z-50 w-full flex flex-wrap items-center justify-between px-6 py-3">
+    <nav className="top-0 fixed z-50 w-full flex flex-wrap items-center justify-between px-6 py-3 bg-[--navy] md:bg-transparent">
       <a
         className="text-[--green] text-4xl leading-5 font-bold inline-block py-2 uppercase"
         href="#"

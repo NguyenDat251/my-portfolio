@@ -16,6 +16,8 @@ import PreloadBackground from "components/PreloadBackground/PreloadBackground";
 import { AnchorDataList } from "utils";
 import "./Landing.scss";
 
+const MEDIUM_SCREEN = 768;
+
 const SectionWrapper = ({ id, children }) => {
   return (
     <section id={id} className="vertical-scrolling">
@@ -28,15 +30,16 @@ const SectionWrapper = ({ id, children }) => {
 
 export default function Landing() {
   useEffect(() => {
-    new fullpage("#fullpage", {
-      licenseKey: "gplv3-license",
-      sectionSelector: ".vertical-scrolling",
-      navigation: true,
-      parallax: true,
-      anchors: AnchorDataList,
-      scrollingSpeed: 500,
-      scrollOverflow: false,
-    });
+    if (window.screen.availWidth >= MEDIUM_SCREEN)
+      new fullpage("#fullpage", {
+        licenseKey: "gplv3-license",
+        sectionSelector: ".vertical-scrolling",
+        navigation: true,
+        parallax: true,
+        anchors: AnchorDataList,
+        scrollingSpeed: 500,
+        scrollOverflow: false,
+      });
   }, []);
   return (
     <>
