@@ -9,6 +9,8 @@ export default function CVButton() {
   //https://stackoverflow.com/a/70791920
   const CV_LINK = process.env.REACT_APP_CV_LINK || DEFAULT_CV_LINK;
 
+  console.log("CV_LINK", process.env.REACT_APP_CV_LINK);
+
   return (
     <>
       <a
