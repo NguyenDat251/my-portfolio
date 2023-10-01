@@ -1,10 +1,11 @@
 import React from "react";
 import "./CVButton.scss";
 
-const CV_LINK =
-  "https://drive.google.com/file/d/1tXa2DAWR9SdmCGJs9r15P3yb1rfad_Px/view?usp=sharing";
-
 export default function CVButton() {
+  //workaroud for process not defined
+  //https://stackoverflow.com/a/70791920
+  const CV_LINK = process.env.REACT_APP_CV_LINK;
+
   return (
     <>
       <a
