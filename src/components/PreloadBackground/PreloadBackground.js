@@ -5,7 +5,9 @@ import DLogo from "assets/logo/DLogo.svg";
 export default function PreloadBackground() {
   useEffect(() => {
     setTimeout(() => {
-      document.querySelector(".preloadWrapper").classList.add("hidden");
+      document
+        .querySelector(".preloadWrapper")
+        .classList.add("hiddenBackground");
     }, 3450);
   }, []);
 

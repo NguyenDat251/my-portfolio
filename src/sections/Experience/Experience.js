@@ -73,7 +73,7 @@ export default function Experience() {
 
   const handleSelectCompany = useCallback(
     (index) => setSelectedCompanyIndex(index),
-    []
+    [selectedCompanyIndex]
   );
 
   return (

@@ -1,11 +1,11 @@
-import MyImg from "assets/my-img.jpg";
+import MyImg from "assets/my-img.webp";
 import "./AboutMe.css";
 
 export default function AboutMe() {
   return (
     <>
       <h2 className="titleSection">About me</h2>
-      <div className="flex gap-6 lg:gap-12 flex-col lg:flex-row">
+      <div className="flex flex-col gap-6 lg:gap-12 lg:flex-row">
         <div className="flex flex-col gap-2 md:gap-2.5">
           <p>
             Hello! My name is Dat. I was born in 1998 in Nha Trang City, a

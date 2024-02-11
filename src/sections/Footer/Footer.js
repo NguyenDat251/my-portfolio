@@ -38,7 +38,7 @@ export default function Footer() {
   }, [hours, minutes]);
 
   useEffect(() => {
-    const apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=Vietnam&units=metric&appid=7d6488f171786a9b72ec528855be74c6`;
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Vietnam&units=metric&appid=7d6488f171786a9b72ec528855be74c6`;
 
     fetch(apiUrl)
       .then((response) => response.json())
@@ -64,8 +64,8 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer className="pt-16 pb-4 lg:pt-0 lg:pb-4 h-screen flex flex-col items-start justify-around md:justify-center">
-      <hr className="horizontal-line mb-4" />
+    <footer className="flex flex-col items-start justify-around h-screen pt-16 pb-4 lg:pt-0 lg:pb-4 md:justify-center">
+      <hr className="mb-4 horizontal-line" />
       <div>
         <div className="section">
           <div className="timeLocation">
