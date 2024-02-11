@@ -3,7 +3,7 @@ import { getContactIconComponent } from "./helpers";
 
 export default function ContactMethodFooter() {
   return (
-    <div className="flex justify-around md:hidden w-full mt-4">
+    <div className="flex justify-around w-full mt-4 md:hidden">
       {contactNames.map((contactName, index) => (
         <div className="contact-method__component" key={contactName}>
           {contactName === "Gmail" ? (
@@ -22,6 +22,7 @@ export default function ContactMethodFooter() {
               key={index}
               target="_blank"
               rel="noreferrer"
+              aria-label={"contact link " + index}
             >
               {getContactIconComponent(contactName)}
             </a>
