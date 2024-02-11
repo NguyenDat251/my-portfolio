@@ -1,4 +1,4 @@
-.preloard {
+.preload {
   animation: bounce-7 1s infinite cubic-bezier(0.28, 0.84, 0.42, 1), zoom 1.5s;
   animation-delay: 0s, 2s;
 }

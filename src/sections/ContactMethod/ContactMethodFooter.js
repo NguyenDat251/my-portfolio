@@ -12,6 +12,7 @@ export default function ContactMethodFooter() {
               key={index}
               target="_blank"
               rel="noreferrer"
+              aria-label="mail"
             >
               {getContactIconComponent(contactName)}
             </a>

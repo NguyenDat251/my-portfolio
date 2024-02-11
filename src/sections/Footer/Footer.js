@@ -101,6 +101,7 @@ export default function Footer() {
                   href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=nguyenquocdat2511998@gmail.com "
                   target="_blank"
                   rel="noreferrer"
+                  aria-label="mail"
                 >
                   <p data-length-info={personalInfo.email}>
                     {personalInfo.email}

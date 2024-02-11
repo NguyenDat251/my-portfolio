@@ -5,7 +5,7 @@ import { getContactIconComponent } from "./helpers";
 export default function ContactMethod() {
   return (
     <>
-      <ul className="contact-method__boundary hidden md:flex flex-col fixed left-8 bottom-0 gap-6">
+      <ul className="fixed bottom-0 flex-col hidden gap-6 contact-method__boundary md:flex left-8">
         {contactNames.map((contactName, index) => (
           <li className="contact-method__component" key={contactName}>
             {contactName === "Gmail" ? (
@@ -14,6 +14,7 @@ export default function ContactMethod() {
                 key={index}
                 target="_blank"
                 rel="noreferrer"
+                aria-label="mail"
               >
                 {getContactIconComponent(contactName)}
               </a>
@@ -23,6 +24,7 @@ export default function ContactMethod() {
                 key={index}
                 target="_blank"
                 rel="noreferrer"
+                aria-label={"contact link " + index}
               >
                 {getContactIconComponent(contactName)}
               </a>

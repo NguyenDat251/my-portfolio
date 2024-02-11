@@ -74,6 +74,11 @@ footer {
   p:hover {
     color: var(--lighest-slate);
   }
+
+  & > a {
+    display: inline-block;
+    height: 48px;
+  }
 }
 
 @media screen and (min-width: 640px) {
@@ -99,10 +104,14 @@ footer {
   }
 
   .summaryInfoSection__content {
-  p {
-    margin-bottom: 12px;
+    p {
+      margin-bottom: 12px;
+    }
+
+    & > a {
+      height: fit-content;
+    }
   }
-}
 }
 
 @media screen and (min-width: 1024px) {
@@ -132,7 +141,7 @@ footer {
 }
 
 @media screen and (min-width: 1280px) {
-    .timeLocation {
+  .timeLocation {
     font-size: 80px;
   }
 

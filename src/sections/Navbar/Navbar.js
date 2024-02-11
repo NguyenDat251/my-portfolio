@@ -19,18 +19,18 @@ export default function Navbar() {
 
   return (
     <nav className="top-0 fixed z-50 w-full flex flex-wrap items-center justify-between px-6 py-3 bg-[--navy] md:bg-transparent">
-      <a
+      <div
         className="text-[--green] text-4xl leading-5 font-bold inline-block py-2 uppercase"
         href="#"
       >
         <div className="w-12 h-12">
-          <a href="#Greeting" className="logoEffect">
+          <a href="#Greeting" className="logoEffect" aria-label="home-link">
             <LogoDot className="absolute firstDot dot-transform-animation" />
             <LogoOrigin className="absolute letter transform-animation" />
             <LogoDot className="absolute secondDot dot-transform-animation" />
           </a>
         </div>
-      </a>
+      </div>
       <CVButton />
       <div
         className={classNames(

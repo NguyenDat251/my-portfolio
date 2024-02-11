@@ -13,7 +13,13 @@ export default function PreloadBackground() {
 
   return (
     <div className="preloadWrapper flex justify-center items-center w-screen h-screen bg-[--navy] z-[999] relative">
-      <img src={DLogo} className="preloard" width={100} height={100} />
+      <img
+        src={DLogo}
+        className="preload"
+        width={100}
+        height={100}
+        alt="my logo"
+      />
     </div>
   );
 }
